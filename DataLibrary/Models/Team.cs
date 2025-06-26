@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace DataLibrary
+namespace DataLibrary.Models
 {
     public class Team
     {
