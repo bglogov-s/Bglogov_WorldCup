@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include=".jsonMen\group_results.json" />
+    <Content Include=".jsonMen\matches.json" />
+    <Content Include=".jsonMen\results.json" />
+    <Content Include=".jsonMen\teams.json" />
+    <Content Include=".jsonWomen\group_results.json" />
+    <Content Include=".jsonWomen\matches.json" />
+    <Content Include=".jsonWomen\results.json" />
+    <Content Include=".jsonWomen\teams.json" />
+  </ItemGroup>
+
+</Project>
