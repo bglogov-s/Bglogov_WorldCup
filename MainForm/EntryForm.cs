@@ -14,6 +14,7 @@ namespace MainForm
     {
         public EntryForm()
         {
+            
             InitializeComponent();
         }
     }
