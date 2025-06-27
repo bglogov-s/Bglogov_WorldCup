@@ -29,17 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_FavoriteTeamForm));
+            cbFavoriteTeam = new ComboBox();
             SuspendLayout();
+            // 
+            // cbFavoriteTeam
+            // 
+            resources.ApplyResources(cbFavoriteTeam, "cbFavoriteTeam");
+            cbFavoriteTeam.FormattingEnabled = true;
+            cbFavoriteTeam.Name = "cbFavoriteTeam";
+            cbFavoriteTeam.SelectedIndexChanged += cbFavoriteTeam_SelectedIndexChanged;
             // 
             // form_FavoriteTeamForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(cbFavoriteTeam);
             Name = "form_FavoriteTeamForm";
             Load += form_FavoriteTeamForm_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private ComboBox cbFavoriteTeam;
     }
 }

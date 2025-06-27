@@ -50,5 +50,10 @@ namespace DataLibrary.Models
 
         [JsonPropertyName("goal_differential")]
         public int GoalDifferential { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Country} ({FifaCode})";
+        }
     }
 }
