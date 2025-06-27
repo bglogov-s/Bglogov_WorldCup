@@ -1,5 +1,7 @@
-﻿using DataLibrary.Enums;
+﻿using DataLibrary.Config;
+using DataLibrary.Enums;
 using DataLibrary.Models;
+using MainClass;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,7 @@ namespace MainForm
 {
     public partial class EntryForm : Form
     {
+        private string _selectedLanguage = "en";
         public EntryForm()
         {
             InitializeComponent();
@@ -26,7 +29,6 @@ namespace MainForm
         {
             PullCategory pull;
             GenderCategory gender;
-
 
             //Pull choice
             if (rbApiPull.Checked)
@@ -48,6 +50,21 @@ namespace MainForm
                 gender = GenderCategory.Female;
             }
 
+            var settings = new UserSettings
+            {
+                SelectedLanguage = _selectedLanguage,
+                UseApiPull = rbApiPull.Checked,
+                UseJsonPull = rbJsonPull.Checked,
+                IsMale = rbMale.Checked,
+                IsFemale = rbFemale.Checked
+
+            };
+
+            SettingsManager.SaveSettings(settings);            
+            form_FavoriteTeamForm teamForm = new form_FavoriteTeamForm();
+            this.Hide();
+            teamForm.Show();
+            
         }
 
         private void SetCulture(string CultureName)
@@ -66,11 +83,14 @@ namespace MainForm
 
         private void btnCroatian_Click(object sender, EventArgs e)
         {
+            _selectedLanguage = "hr";
             SetCulture("hr");
+            
         }
 
         private void btnEnglish_Click(object sender, EventArgs e)
         {
+            _selectedLanguage = "en";
             SetCulture("en");
         }
     }

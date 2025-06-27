@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLibrary
+namespace DataLibrary.Config
 {
     public class Endpoints
     {
