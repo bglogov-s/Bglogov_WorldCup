@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,14 +16,11 @@ namespace MainForm
     public partial class EntryForm : Form
     {
         public EntryForm()
-        {          
+        {
             InitializeComponent();
         }
 
-        private void EntryForm_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -45,13 +43,35 @@ namespace MainForm
             {
                 gender = GenderCategory.Male;
             }
-            else if  (rbFemale.Checked)
+            else if (rbFemale.Checked)
             {
                 gender = GenderCategory.Female;
             }
-         
+
         }
 
-        
+        private void SetCulture(string CultureName)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(CultureName);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(CultureName);
+
+            UpdateUI();
+        }
+
+        private void UpdateUI()
+        {
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void btnCroatian_Click(object sender, EventArgs e)
+        {
+            SetCulture("hr");
+        }
+
+        private void btnEnglish_Click(object sender, EventArgs e)
+        {
+            SetCulture("en");
+        }
     }
 }

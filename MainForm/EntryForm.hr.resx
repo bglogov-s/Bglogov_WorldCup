@@ -120,9 +120,6 @@
   <data name="gbDataPull.Text" xml:space="preserve">
     <value>Dohvat podataka</value>
   </data>
-  <data name="gbGenderChoice.Text" xml:space="preserve">
-    <value>Spol</value>
-  </data>
   <data name="rbFemale.Text" xml:space="preserve">
     <value>Žensko</value>
   </data>
@@ -133,22 +130,19 @@
   <data name="rbMale.Text" xml:space="preserve">
     <value>Muško</value>
   </data>
-  <data name="gbLanguage.Text" xml:space="preserve">
-    <value>Jezik</value>
-  </data>
-  <data name="rbEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 19</value>
-  </data>
-  <data name="rbEnglish.Text" xml:space="preserve">
-    <value>Engleski</value>
-  </data>
-  <data name="rbCroatian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 19</value>
-  </data>
-  <data name="rbCroatian.Text" xml:space="preserve">
-    <value>Hrvatski</value>
+  <data name="gbGenderChoice.Text" xml:space="preserve">
+    <value>Spol</value>
   </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Spremi</value>
+  </data>
+  <data name="btnCroatian.Text" xml:space="preserve">
+    <value>Hrvatski</value>
+  </data>
+  <data name="btnEnglish.Text" xml:space="preserve">
+    <value>Engleski</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Postavke</value>
   </data>
 </root>

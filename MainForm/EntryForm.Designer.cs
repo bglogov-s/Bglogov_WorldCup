@@ -37,13 +37,11 @@
             gbGenderChoice = new GroupBox();
             rbFemale = new RadioButton();
             rbMale = new RadioButton();
-            gbLanguage = new GroupBox();
-            rbEnglish = new RadioButton();
-            rbCroatian = new RadioButton();
             btnSave = new Button();
+            btnCroatian = new Button();
+            btnEnglish = new Button();
             gbDataPull.SuspendLayout();
             gbGenderChoice.SuspendLayout();
-            gbLanguage.SuspendLayout();
             SuspendLayout();
             // 
             // gbDataPull
@@ -90,28 +88,6 @@
             rbMale.TabStop = true;
             rbMale.UseVisualStyleBackColor = true;
             // 
-            // gbLanguage
-            // 
-            resources.ApplyResources(gbLanguage, "gbLanguage");
-            gbLanguage.Controls.Add(rbEnglish);
-            gbLanguage.Controls.Add(rbCroatian);
-            gbLanguage.Name = "gbLanguage";
-            gbLanguage.TabStop = false;
-            // 
-            // rbEnglish
-            // 
-            resources.ApplyResources(rbEnglish, "rbEnglish");
-            rbEnglish.Checked = true;
-            rbEnglish.Name = "rbEnglish";
-            rbEnglish.TabStop = true;
-            rbEnglish.UseVisualStyleBackColor = true;
-            // 
-            // rbCroatian
-            // 
-            resources.ApplyResources(rbCroatian, "rbCroatian");
-            rbCroatian.Name = "rbCroatian";
-            rbCroatian.UseVisualStyleBackColor = true;
-            // 
             // btnSave
             // 
             resources.ApplyResources(btnSave, "btnSave");
@@ -119,22 +95,34 @@
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 
+            // btnCroatian
+            // 
+            resources.ApplyResources(btnCroatian, "btnCroatian");
+            btnCroatian.Name = "btnCroatian";
+            btnCroatian.UseVisualStyleBackColor = true;
+            btnCroatian.Click += btnCroatian_Click;
+            // 
+            // btnEnglish
+            // 
+            resources.ApplyResources(btnEnglish, "btnEnglish");
+            btnEnglish.Name = "btnEnglish";
+            btnEnglish.UseVisualStyleBackColor = true;
+            btnEnglish.Click += btnEnglish_Click;
+            // 
             // EntryForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnEnglish);
+            Controls.Add(btnCroatian);
             Controls.Add(btnSave);
-            Controls.Add(gbLanguage);
             Controls.Add(gbGenderChoice);
             Controls.Add(gbDataPull);
             Name = "EntryForm";
-            Load += EntryForm_Load;
             gbDataPull.ResumeLayout(false);
             gbDataPull.PerformLayout();
             gbGenderChoice.ResumeLayout(false);
             gbGenderChoice.PerformLayout();
-            gbLanguage.ResumeLayout(false);
-            gbLanguage.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -146,9 +134,8 @@
         private GroupBox gbGenderChoice;
         private RadioButton rbFemale;
         private RadioButton rbMale;
-        private GroupBox gbLanguage;
-        private RadioButton rbEnglish;
-        private RadioButton rbCroatian;
         private Button btnSave;
+        private Button btnCroatian;
+        private Button btnEnglish;
     }
 }
