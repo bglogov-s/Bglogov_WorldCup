@@ -1,4 +1,5 @@
-﻿using DataLibrary.Models;
+﻿using DataLibrary.Enums;
+using DataLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,9 @@ namespace MainForm
     {
         public EntryForm()
         {
+            
             InitializeComponent();
+            
         }
 
         private void EntryForm_Load(object sender, EventArgs e)
@@ -25,7 +28,10 @@ namespace MainForm
 
         private void rbApiPull_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (rbApiPull.Checked)
+            {
+                
+            }
         }
 
         private void rbJsonPull_CheckedChanged(object sender, EventArgs e)
@@ -35,6 +41,31 @@ namespace MainForm
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            PullCategory pull;
+            GenderCategory gender;
+
+
+            //Pull choice
+            if (rbApiPull.Checked)
+            {
+                pull = PullCategory.API;
+            }
+            else if (rbJsonPull.Checked)
+            {
+                pull = PullCategory.JSON;
+            }
+
+            //Gender choice
+            if (rbMale.Checked)
+            {
+                gender = GenderCategory.Male;
+            }
+            else if  (rbFemale.Checked)
+            {
+                gender = GenderCategory.Female;
+            }
+
+            //Lanugage
             
         }
 

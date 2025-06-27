@@ -31,14 +31,14 @@
         private void InitializeComponent()
         {
             gbDataPull = new GroupBox();
-            rbApiPull = new RadioButton();
             rbJsonPull = new RadioButton();
+            rbApiPull = new RadioButton();
             gbGenderChoice = new GroupBox();
-            rbMale = new RadioButton();
             rbFemale = new RadioButton();
+            rbMale = new RadioButton();
             gbLanguage = new GroupBox();
-            rbCroatian = new RadioButton();
             rbEnglish = new RadioButton();
+            rbCroatian = new RadioButton();
             btnSave = new Button();
             gbDataPull.SuspendLayout();
             gbGenderChoice.SuspendLayout();
@@ -57,9 +57,21 @@
             gbDataPull.Text = "Data pull";
             gbDataPull.Enter += gbDataPull_Enter;
             // 
+            // rbJsonPull
+            // 
+            rbJsonPull.AutoSize = true;
+            rbJsonPull.Location = new Point(176, 36);
+            rbJsonPull.Name = "rbJsonPull";
+            rbJsonPull.Size = new Size(53, 19);
+            rbJsonPull.TabIndex = 1;
+            rbJsonPull.Text = "JSON";
+            rbJsonPull.UseVisualStyleBackColor = true;
+            rbJsonPull.CheckedChanged += rbJsonPull_CheckedChanged;
+            // 
             // rbApiPull
             // 
             rbApiPull.AutoSize = true;
+            rbApiPull.Checked = true;
             rbApiPull.Location = new Point(38, 36);
             rbApiPull.Name = "rbApiPull";
             rbApiPull.Size = new Size(43, 19);
@@ -68,18 +80,6 @@
             rbApiPull.Text = "API";
             rbApiPull.UseVisualStyleBackColor = true;
             rbApiPull.CheckedChanged += rbApiPull_CheckedChanged;
-            // 
-            // rbJsonPull
-            // 
-            rbJsonPull.AutoSize = true;
-            rbJsonPull.Location = new Point(176, 36);
-            rbJsonPull.Name = "rbJsonPull";
-            rbJsonPull.Size = new Size(53, 19);
-            rbJsonPull.TabIndex = 1;
-            rbJsonPull.TabStop = true;
-            rbJsonPull.Text = "JSON";
-            rbJsonPull.UseVisualStyleBackColor = true;
-            rbJsonPull.CheckedChanged += rbJsonPull_CheckedChanged;
             // 
             // gbGenderChoice
             // 
@@ -93,9 +93,21 @@
             gbGenderChoice.Text = "Gender";
             gbGenderChoice.Enter += gbGenderChoice_Enter;
             // 
+            // rbFemale
+            // 
+            rbFemale.AutoSize = true;
+            rbFemale.Location = new Point(176, 36);
+            rbFemale.Name = "rbFemale";
+            rbFemale.Size = new Size(63, 19);
+            rbFemale.TabIndex = 1;
+            rbFemale.Text = "Female";
+            rbFemale.UseVisualStyleBackColor = true;
+            rbFemale.CheckedChanged += rbFemale_CheckedChanged;
+            // 
             // rbMale
             // 
             rbMale.AutoSize = true;
+            rbMale.Checked = true;
             rbMale.Location = new Point(38, 36);
             rbMale.Name = "rbMale";
             rbMale.Size = new Size(51, 19);
@@ -104,18 +116,6 @@
             rbMale.Text = "Male";
             rbMale.UseVisualStyleBackColor = true;
             rbMale.CheckedChanged += rbMale_CheckedChanged;
-            // 
-            // rbFemale
-            // 
-            rbFemale.AutoSize = true;
-            rbFemale.Location = new Point(176, 36);
-            rbFemale.Name = "rbFemale";
-            rbFemale.Size = new Size(63, 19);
-            rbFemale.TabIndex = 1;
-            rbFemale.TabStop = true;
-            rbFemale.Text = "Female";
-            rbFemale.UseVisualStyleBackColor = true;
-            rbFemale.CheckedChanged += rbFemale_CheckedChanged;
             // 
             // gbLanguage
             // 
@@ -129,21 +129,10 @@
             gbLanguage.Text = "Language";
             gbLanguage.Enter += gbLanguage_Enter;
             // 
-            // rbCroatian
-            // 
-            rbCroatian.AutoSize = true;
-            rbCroatian.Location = new Point(38, 36);
-            rbCroatian.Name = "rbCroatian";
-            rbCroatian.Size = new Size(70, 19);
-            rbCroatian.TabIndex = 0;
-            rbCroatian.TabStop = true;
-            rbCroatian.Text = "Croatian";
-            rbCroatian.UseVisualStyleBackColor = true;
-            rbCroatian.CheckedChanged += rbCroatian_CheckedChanged;
-            // 
             // rbEnglish
             // 
             rbEnglish.AutoSize = true;
+            rbEnglish.Checked = true;
             rbEnglish.Location = new Point(176, 36);
             rbEnglish.Name = "rbEnglish";
             rbEnglish.Size = new Size(63, 19);
@@ -152,6 +141,17 @@
             rbEnglish.Text = "English";
             rbEnglish.UseVisualStyleBackColor = true;
             rbEnglish.CheckedChanged += rbEnglish_CheckedChanged;
+            // 
+            // rbCroatian
+            // 
+            rbCroatian.AutoSize = true;
+            rbCroatian.Location = new Point(38, 36);
+            rbCroatian.Name = "rbCroatian";
+            rbCroatian.Size = new Size(70, 19);
+            rbCroatian.TabIndex = 0;
+            rbCroatian.Text = "Croatian";
+            rbCroatian.UseVisualStyleBackColor = true;
+            rbCroatian.CheckedChanged += rbCroatian_CheckedChanged;
             // 
             // btnSave
             // 
