@@ -6,6 +6,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>net8.0-windows</TargetFramework>
+  <EnableWindowsTargeting>true</EnableWindowsTargeting>
+
   </PropertyGroup>
 
   <ItemGroup>
