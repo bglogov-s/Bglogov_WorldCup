@@ -21,7 +21,24 @@ namespace MainForm
             
         }
 
-        
+        private void EntryForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbApiPull_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbApiPull.Checked)
+            {
+                
+            }
+        }
+
+        private void rbJsonPull_CheckedChanged(object sender, EventArgs e)
+        {
+                        
+        }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             PullCategory pull;
@@ -47,10 +64,44 @@ namespace MainForm
             {
                 gender = GenderCategory.Female;
             }
-        
+
+            //Lanugage
             
         }
 
-        
+        private void rbCroatian_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbFemale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbDataPull_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbGenderChoice_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbLanguage_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
