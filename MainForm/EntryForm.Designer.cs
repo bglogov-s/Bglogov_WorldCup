@@ -55,7 +55,7 @@
             gbDataPull.TabIndex = 0;
             gbDataPull.TabStop = false;
             gbDataPull.Text = "Data pull";
-            gbDataPull.Enter += gbDataPull_Enter;
+            
             // 
             // rbJsonPull
             // 
@@ -66,7 +66,7 @@
             rbJsonPull.TabIndex = 1;
             rbJsonPull.Text = "JSON";
             rbJsonPull.UseVisualStyleBackColor = true;
-            rbJsonPull.CheckedChanged += rbJsonPull_CheckedChanged;
+            
             // 
             // rbApiPull
             // 
@@ -79,7 +79,7 @@
             rbApiPull.TabStop = true;
             rbApiPull.Text = "API";
             rbApiPull.UseVisualStyleBackColor = true;
-            rbApiPull.CheckedChanged += rbApiPull_CheckedChanged;
+            
             // 
             // gbGenderChoice
             // 
@@ -91,7 +91,7 @@
             gbGenderChoice.TabIndex = 1;
             gbGenderChoice.TabStop = false;
             gbGenderChoice.Text = "Gender";
-            gbGenderChoice.Enter += gbGenderChoice_Enter;
+            
             // 
             // rbFemale
             // 
@@ -102,7 +102,7 @@
             rbFemale.TabIndex = 1;
             rbFemale.Text = "Female";
             rbFemale.UseVisualStyleBackColor = true;
-            rbFemale.CheckedChanged += rbFemale_CheckedChanged;
+            
             // 
             // rbMale
             // 
@@ -115,7 +115,7 @@
             rbMale.TabStop = true;
             rbMale.Text = "Male";
             rbMale.UseVisualStyleBackColor = true;
-            rbMale.CheckedChanged += rbMale_CheckedChanged;
+            
             // 
             // gbLanguage
             // 
@@ -127,7 +127,7 @@
             gbLanguage.TabIndex = 2;
             gbLanguage.TabStop = false;
             gbLanguage.Text = "Language";
-            gbLanguage.Enter += gbLanguage_Enter;
+            
             // 
             // rbEnglish
             // 
@@ -140,7 +140,7 @@
             rbEnglish.TabStop = true;
             rbEnglish.Text = "English";
             rbEnglish.UseVisualStyleBackColor = true;
-            rbEnglish.CheckedChanged += rbEnglish_CheckedChanged;
+            
             // 
             // rbCroatian
             // 
@@ -151,7 +151,7 @@
             rbCroatian.TabIndex = 0;
             rbCroatian.Text = "Croatian";
             rbCroatian.UseVisualStyleBackColor = true;
-            rbCroatian.CheckedChanged += rbCroatian_CheckedChanged;
+            
             // 
             // btnSave
             // 
@@ -174,7 +174,7 @@
             Controls.Add(gbDataPull);
             Name = "EntryForm";
             Text = "Settings";
-            Load += EntryForm_Load;
+            
             gbDataPull.ResumeLayout(false);
             gbDataPull.PerformLayout();
             gbGenderChoice.ResumeLayout(false);
