@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,11 @@ namespace MainForm
         {
             
             InitializeComponent();
+        }
+
+        private void EntryForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
