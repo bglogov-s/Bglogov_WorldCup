@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,19 @@ namespace MainClass
 {
     public partial class from_FavoritePlayersForm : Form
     {
+
+        public static List<Player> AllPlayers;
+        public static List<Player> FavoritePlayers;
+
         public from_FavoritePlayersForm()
         {
             InitializeComponent();
+
+        }
+
+        private void flp_AllPlayers_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -19,6 +19,8 @@ namespace DataLibrary.Models
         public int ShirtNumber { get; set; }
 
         [JsonPropertyName("position")]
-        public string Position { get; set; } = string.Empty;    // Goalie, Defender …
+        public string Position { get; set; } = string.Empty;
+
+        
     }
 }

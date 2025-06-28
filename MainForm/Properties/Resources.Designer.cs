@@ -73,6 +73,26 @@ namespace MainClass.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap player_PlayerControl {
+            get {
+                object obj = ResourceManager.GetObject("player_PlayerControl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_PlayerControl {
+            get {
+                object obj = ResourceManager.GetObject("png_PlayerControl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap team_favoriteTeamForm {
             get {
                 object obj = ResourceManager.GetObject("team_favoriteTeamForm", resourceCulture);

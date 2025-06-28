@@ -118,125 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnConfirm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 415</value>
+  <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 6</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="lblNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 33</value>
+  </data>
+  <data name="lblNumber.Text" xml:space="preserve">
+    <value>Broj</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblPosition.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblPosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 80</value>
+  </data>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>Pozicija</value>
+  </data>
+  <data name="lblCaptain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 80</value>
+  </data>
+  <data name="lblCaptain.Text" xml:space="preserve">
+    <value>Kapetan</value>
+  </data>
+  <data name="lblFavorite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 6</value>
+  </data>
+  <data name="lblFavorite.Text" xml:space="preserve">
+    <value>Favorit</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnMoveToAllPlayers.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="btnConfirm.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToAllPlayers.Name" xml:space="preserve">
-    <value>btnMoveToAllPlayers</value>
-  </data>
-  <data name="&gt;&gt;btnConfirm.Name" xml:space="preserve">
-    <value>btnConfirm</value>
-  </data>
-  <data name="&gt;&gt;btnConfirm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flp_AllPlayers.Name" xml:space="preserve">
-    <value>flp_AllPlayers</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToFavorite.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnMoveToFavorite.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 136</value>
-  </data>
-  <data name="&gt;&gt;flp_FavoritePlayer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flp_FavoritePlayer.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="flp_FavoritePlayer.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="flp_FavoritePlayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 12</value>
-  </data>
-  <data name="btnMoveToFavorite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>FavoritePlayersForm</value>
-  </data>
-  <data name="btnMoveToAllPlayers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 174</value>
-  </data>
-  <data name="btnMoveToAllPlayers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToAllPlayers.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnConfirm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToFavorite.Name" xml:space="preserve">
-    <value>btnMoveToFavorite</value>
-  </data>
-  <data name="&gt;&gt;btnConfirm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flp_FavoritePlayer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>from_FavoritePlayersForm</value>
-  </data>
-  <data name="flp_AllPlayers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;flp_AllPlayers.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToFavorite.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToAllPlayers.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;flp_FavoritePlayer.Name" xml:space="preserve">
-    <value>flp_FavoritePlayer</value>
-  </data>
-  <data name="btnMoveToFavorite.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnConfirm.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flp_AllPlayers.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToAllPlayers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="flp_AllPlayers.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;btnMoveToFavorite.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flp_AllPlayers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="cbSelect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>hr</value>
-  </metadata>
+  </data>
+  <data name="cbSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 110</value>
+  </data>
 </root>
