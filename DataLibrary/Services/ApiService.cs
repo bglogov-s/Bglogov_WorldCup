@@ -19,16 +19,13 @@ namespace DataLibrary.Services
                 if (!response.IsSuccessful)
                 {
                     throw new Exception($"API Error: {response.StatusCode} - {response.ErrorMessage}");
-
-                   
                 }
 
                 return JsonConvert.DeserializeObject<T>(response.Content ?? "");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
-
             }
         }
     }

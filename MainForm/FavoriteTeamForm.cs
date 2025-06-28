@@ -1,4 +1,5 @@
-﻿using MainForm;
+﻿using DataLibrary.Models;
+using MainForm;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
@@ -17,14 +18,53 @@ namespace MainClass
     {
         public form_FavoriteTeamForm()
         {
-
-
             InitializeComponent();
         }
 
-        private void form_FavoriteTeamForm_Load(object sender, EventArgs e)
+        private async void form_FavoriteTeamForm_Load(object sender, EventArgs e)
         {
+            var settings = DataLibrary.Config.SettingsManager.LoadSettings();
 
+            if (settings == null)
+            {
+                MessageBox.Show("Configuration file not found");
+                return;
+            }
+
+            string gender = settings.IsMale ? "men" : "women";
+            List<DataLibrary.Models.Team>? teams = null;
+
+            if (settings.UseApiPull)
+            {
+                teams = await DataLibrary.Services.FactoryAPI.GetTeamsAsync(gender);
+            }
+            else if (settings.UseJsonPull)
+            {
+                string folder = settings.IsMale ? "jsonMen" : "jsonWomen";
+                string fileName = $"{gender}_teams.json";
+                string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, folder, fileName);
+
+
+                if (File.Exists(jsonPath))
+                {
+                    string json = await File.ReadAllTextAsync(jsonPath);
+                    teams = System.Text.Json.JsonSerializer.Deserialize<List<Team>>(json);
+                }
+                else
+                {
+                    MessageBox.Show($"JSON file not found. Check if files really exist: {jsonPath}");
+                    return;
+                }
+            }
+
+            if (teams != null)
+            {
+                cbFavoriteTeam.DataSource = teams;
+            }
+            else
+            {
+                MessageBox.Show("Data is not avaiable.");
+            }
         }
 
         private void cbFavoriteTeam_SelectedIndexChanged(object sender, EventArgs e)
@@ -32,22 +72,21 @@ namespace MainClass
 
         }
 
-        public async Task<T?> FetchFromApiAsync<T>(string endpoint, RestResponse response)
+        public async Task<T?> FetchFromApiAsync<T>(string endpoint)
         {
             var request = new RestRequest(endpoint, Method.Get);
 
             try
             {
                 RestResponse restResponse = await DataLibrary.Config.Endpoints._restClient.ExecuteAsync(request);
-               
 
-                if (!response.IsSuccessful)
+                if (!restResponse.IsSuccessful)
                 {
-                    MessageBox.Show($"API Error: {response.StatusCode} - {response.ErrorMessage}");
+                    MessageBox.Show($"API Error: {restResponse.StatusCode} - {restResponse.ErrorMessage}");
                     return default;
                 }
 
-                return JsonSerializer.Deserialize<T>(restResponse.Content ?? "");
+                return JsonConvert.DeserializeObject<T>(restResponse.Content ?? "");
             }
             catch (Exception ex)
             {
@@ -55,6 +94,7 @@ namespace MainClass
                 return default;
             }
         }
+
 
     }
 }

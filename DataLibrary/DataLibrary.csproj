@@ -7,14 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="jsonMen\group_results.json" />
-    <Content Include="jsonMen\matches.json" />
-    <Content Include="jsonMen\results.json" />
-    <Content Include="jsonMen\teams.json" />
-    <Content Include="jsonWomen\group_results.json" />
-    <Content Include="jsonWomen\matches.json" />
-    <Content Include="jsonWomen\results.json" />
-    <Content Include="jsonWomen\teams.json" />
+    <Content Include="jsonMen\men_group_results.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonMen\men_matches.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonMen\men_results.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonMen\men_teams.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonWomen\women_group_results.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonWomen\women_matches.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonWomen\women_results.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jsonWomen\women_teams.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
