@@ -4,5 +4,10 @@
   "UseJsonPull": false,
   "IsMale": true,
   "IsFemale": false,
-  "FavoriteTeamFifaCode": "KOR"
+  "FavoriteTeamFifaCode": "KOR",
+  "FavoritePlayers": [
+    "GO Yohan_22",
+    "KIM Jinhyeon_21",
+    "MOON Seonmin_18"
+  ]
 }

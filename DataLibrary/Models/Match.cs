@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using DataLibrary.Models;
+
+
 
 namespace DataLibrary.Models
 {
@@ -34,7 +37,7 @@ namespace DataLibrary.Models
         public List<string> Officials { get; set; } = new();
 
         [JsonPropertyName("stage_name")]
-        public string StageName { get; set; } = string.Empty;   // npr. "First stage"
+        public string StageName { get; set; } = string.Empty;   
 
         [JsonPropertyName("home_team_country")]
         public string HomeTeamCountry { get; set; } = string.Empty;
@@ -46,7 +49,7 @@ namespace DataLibrary.Models
         public DateTime DateTime { get; set; }
 
         [JsonPropertyName("winner")]
-        public string Winner { get; set; } = string.Empty;      // "Draw" ili zemlja
+        public string Winner { get; set; } = string.Empty;     
 
         [JsonPropertyName("winner_code")]
         public string WinnerCode { get; set; } = string.Empty;

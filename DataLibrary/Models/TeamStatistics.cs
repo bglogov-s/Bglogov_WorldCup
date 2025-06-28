@@ -69,9 +69,8 @@ namespace DataLibrary.Models
         public int FoulsCommitted { get; set; }
 
         [JsonPropertyName("tactics")]
-        public string Tactics { get; set; } = string.Empty;     // npr. "4-3-3"
+        public string Tactics { get; set; } = string.Empty;    
 
-        // ----- sastavi -----
         [JsonPropertyName("starting_eleven")]
         public List<Player> StartingEleven { get; set; } = new();
 

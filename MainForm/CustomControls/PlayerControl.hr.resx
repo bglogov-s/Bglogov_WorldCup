@@ -121,11 +121,17 @@
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 6</value>
   </data>
+  <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 23</value>
+  </data>
   <data name="lblName.Text" xml:space="preserve">
     <value>Ime</value>
   </data>
   <data name="lblNumber.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 33</value>
+  </data>
+  <data name="lblNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
   </data>
   <data name="lblNumber.Text" xml:space="preserve">
     <value>Broj</value>
@@ -156,6 +162,9 @@
   <data name="cbSelect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="cbSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>285, 81</value>
+  </data>
   <data name="cbSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
@@ -165,7 +174,13 @@
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 50</value>
   </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 110</value>
+    <value>316, 103</value>
   </data>
 </root>

@@ -39,31 +39,47 @@
             // flp_AllPlayers
             // 
             resources.ApplyResources(flp_AllPlayers, "flp_AllPlayers");
+            flp_AllPlayers.AllowDrop = true;
+            flp_AllPlayers.BorderStyle = BorderStyle.FixedSingle;
             flp_AllPlayers.Name = "flp_AllPlayers";
+            flp_AllPlayers.DragDrop += flp_AllPlayers_DragDrop;
+            flp_AllPlayers.DragEnter += flp_AllPlayers_DragEnter;
             flp_AllPlayers.Paint += flp_AllPlayers_Paint;
+            flp_AllPlayers.MouseDown += flp_AllPlayers_MouseDown;
+            flp_AllPlayers.MouseEnter += flp_AllPlayers_MouseEnter;
             // 
             // flp_FavoritePlayer
             // 
             resources.ApplyResources(flp_FavoritePlayer, "flp_FavoritePlayer");
+            flp_FavoritePlayer.AllowDrop = true;
+            flp_FavoritePlayer.BorderStyle = BorderStyle.FixedSingle;
             flp_FavoritePlayer.Name = "flp_FavoritePlayer";
+            flp_FavoritePlayer.DragDrop += flp_FavoritePlayer_DragDrop;
+            flp_FavoritePlayer.DragEnter += flp_FavoritePlayer_DragEnter;
+            flp_FavoritePlayer.Paint += flp_FavoritePlayer_Paint;
+            flp_FavoritePlayer.MouseDown += flp_FavoritePlayer_MouseDown;
+            flp_FavoritePlayer.MouseEnter += flp_FavoritePlayer_MouseEnter;
             // 
             // btnMoveToFavorite
             // 
             resources.ApplyResources(btnMoveToFavorite, "btnMoveToFavorite");
             btnMoveToFavorite.Name = "btnMoveToFavorite";
             btnMoveToFavorite.UseVisualStyleBackColor = true;
+            btnMoveToFavorite.Click += btnMoveToFavorite_Click;
             // 
             // btnMoveToAllPlayers
             // 
             resources.ApplyResources(btnMoveToAllPlayers, "btnMoveToAllPlayers");
             btnMoveToAllPlayers.Name = "btnMoveToAllPlayers";
             btnMoveToAllPlayers.UseVisualStyleBackColor = true;
+            btnMoveToAllPlayers.Click += btnMoveToAllPlayers_Click;
             // 
             // btnConfirm
             // 
             resources.ApplyResources(btnConfirm, "btnConfirm");
             btnConfirm.Name = "btnConfirm";
             btnConfirm.UseVisualStyleBackColor = true;
+            btnConfirm.Click += btnConfirm_Click;
             // 
             // from_FavoritePlayersForm
             // 
@@ -75,6 +91,7 @@
             Controls.Add(flp_FavoritePlayer);
             Controls.Add(flp_AllPlayers);
             Name = "from_FavoritePlayersForm";
+            Load += from_FavoritePlayersForm_LoadAsync;
             ResumeLayout(false);
         }
 

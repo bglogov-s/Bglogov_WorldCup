@@ -14,6 +14,6 @@ namespace DataLibrary.Config
         public bool IsMale { get; set; }
         public bool IsFemale { get; set; }
         public string? FavoriteTeamFifaCode { get; set; }
-
+        public List<string> FavoritePlayers { get; set; } = new();
     }
 }
