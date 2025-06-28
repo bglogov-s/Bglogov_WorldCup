@@ -23,47 +23,48 @@ namespace MainClass
 
         private async void form_FavoriteTeamForm_Load(object sender, EventArgs e)
         {
-            var settings = DataLibrary.Config.SettingsManager.LoadSettings();
-
-            if (settings == null)
+            try
             {
-                MessageBox.Show("Configuration file not found");
-                return;
-            }
+                var settings = DataLibrary.Config.SettingsManager.LoadSettings();
 
-            string gender = settings.IsMale ? "men" : "women";
-            List<DataLibrary.Models.Team>? teams = null;
+                string gender = settings.IsMale ? "men" : "women";
+                List<DataLibrary.Models.Team>? teams = null;
 
-            if (settings.UseApiPull)
-            {
-                teams = await DataLibrary.Services.FactoryAPI.GetTeamsAsync(gender);
-            }
-            else if (settings.UseJsonPull)
-            {
-                string folder = settings.IsMale ? "jsonMen" : "jsonWomen";
-                string fileName = $"{gender}_teams.json";
-                string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, folder, fileName);
-
-
-                if (File.Exists(jsonPath))
+                if (settings.UseApiPull)
                 {
-                    string json = await File.ReadAllTextAsync(jsonPath);
-                    teams = System.Text.Json.JsonSerializer.Deserialize<List<Team>>(json);
+                    teams = await DataLibrary.Services.FactoryAPI.GetTeamsAsync(gender);
+                }
+                else if (settings.UseJsonPull)
+                {
+                    string folder = settings.IsMale ? "jsonMen" : "jsonWomen";
+                    string fileName = $"{gender}_teams.json";
+                    string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, folder, fileName);
+
+
+                    if (File.Exists(jsonPath))
+                    {
+                        string json = await File.ReadAllTextAsync(jsonPath);
+                        teams = System.Text.Json.JsonSerializer.Deserialize<List<Team>>(json);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"JSON file not found. Check if files really exist: {jsonPath}");
+                        return;
+                    }
+                }
+
+                if (teams != null)
+                {
+                    cbFavoriteTeam.DataSource = teams;
                 }
                 else
                 {
-                    MessageBox.Show($"JSON file not found. Check if files really exist: {jsonPath}");
-                    return;
+                    MessageBox.Show("Data is not avaiable.");
                 }
             }
-
-            if (teams != null)
+            catch (Exception ex)
             {
-                cbFavoriteTeam.DataSource = teams;
-            }
-            else
-            {
-                MessageBox.Show("Data is not avaiable.");
+                MessageBox.Show(ex.Message);    
             }
         }
 

@@ -117,310 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="rbApiPull.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnEnglish.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="gbLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 80</value>
+  <data name="rbFemale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 19</value>
   </data>
-  <data name="rbCroatian.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 36</value>
+  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="rbJsonPull.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;gbLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rbMale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 36</value>
-  </data>
-  <data name="rbMale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 19</value>
-  </data>
-  <data name="rbJsonPull.Text" xml:space="preserve">
-    <value>JSON</value>
-  </data>
-  <data name="btnEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
-    <value>btnSave</value>
-  </data>
-  <data name="rbCroatian.Text" xml:space="preserve">
-    <value>Croatian</value>
-  </data>
-  <data name="&gt;&gt;btnEnglish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCroatian.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbMale.Parent" xml:space="preserve">
-    <value>gbGenderChoice</value>
-  </data>
-  <data name="&gt;&gt;rbFemale.Parent" xml:space="preserve">
-    <value>gbGenderChoice</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="rbFemale.Text" xml:space="preserve">
+    <value>Female</value>
   </data>
   <data name="rbCroatian.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 19</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rbMale.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>678, 399</value>
+  </data>
+  <data name="&gt;&gt;rbFemale.Name" xml:space="preserve">
+    <value>rbFemale</value>
+  </data>
+  <data name="&gt;&gt;rbJsonPull.Parent" xml:space="preserve">
+    <value>gbDataPull</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="gbDataPull.Text" xml:space="preserve">
     <value>Data pull</value>
-  </data>
-  <data name="btnEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>455, 276</value>
-  </data>
-  <data name="&gt;&gt;gbLanguage.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="rbFemale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 19</value>
-  </data>
-  <data name="btnCroatian.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 276</value>
-  </data>
-  <data name="&gt;&gt;rbMale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gbDataPull.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gbDataPull.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 80</value>
-  </data>
-  <data name="&gt;&gt;gbGenderChoice.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;rbFemale.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 39</value>
   </data>
-  <data name="rbMale.Text" xml:space="preserve">
-    <value>Male</value>
+  <data name="rbEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 19</value>
   </data>
-  <data name="&gt;&gt;rbEnglish.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="rbJsonPull.Text" xml:space="preserve">
+    <value>JSON</value>
   </data>
-  <data name="&gt;&gt;rbEnglish.Name" xml:space="preserve">
-    <value>rbEnglish</value>
-  </data>
-  <data name="rbApiPull.Text" xml:space="preserve">
-    <value>API</value>
-  </data>
-  <data name="btnSave.Text" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="rbEnglish.TabIndex" type="System.Int32, mscorlib">
+  <data name="gbGenderChoice.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="gbDataPull.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 30</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
   </data>
-  <data name="rbJsonPull.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="rbApiPull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 36</value>
+  </data>
+  <data name="&gt;&gt;gbDataPull.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnEnglish.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="btnEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>455, 276</value>
+  </data>
+  <data name="&gt;&gt;gbLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbCroatian.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbMale.Name" xml:space="preserve">
+    <value>rbMale</value>
+  </data>
+  <data name="rbFemale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 36</value>
+  </data>
+  <data name="rbJsonPull.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbApiPull.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rbEnglish.Location" type="System.Drawing.Point, System.Drawing">
     <value>176, 36</value>
   </data>
   <data name="&gt;&gt;gbGenderChoice.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="rbCroatian.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gbGenderChoice.Text" xml:space="preserve">
-    <value>Gender</value>
-  </data>
-  <data name="&gt;&gt;gbGenderChoice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbApiPull.Parent" xml:space="preserve">
-    <value>gbDataPull</value>
-  </data>
-  <data name="rbFemale.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;rbMale.Name" xml:space="preserve">
-    <value>rbMale</value>
-  </data>
-  <data name="&gt;&gt;rbCroatian.Name" xml:space="preserve">
-    <value>rbCroatian</value>
-  </data>
-  <data name="&gt;&gt;rbEnglish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rbJsonPull.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnCroatian.Name" xml:space="preserve">
-    <value>btnCroatian</value>
-  </data>
-  <data name="rbApiPull.Location" type="System.Drawing.Point, System.Drawing">
-    <value>38, 36</value>
-  </data>
-  <data name="&gt;&gt;rbFemale.Name" xml:space="preserve">
-    <value>rbFemale</value>
-  </data>
-  <data name="&gt;&gt;rbApiPull.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="rbCroatian.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>EntryForm</value>
-  </data>
-  <data name="&gt;&gt;gbGenderChoice.Name" xml:space="preserve">
-    <value>gbGenderChoice</value>
-  </data>
-  <data name="gbGenderChoice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 80</value>
-  </data>
-  <data name="rbFemale.Text" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="&gt;&gt;gbDataPull.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="rbEnglish.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="rbJsonPull.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
-  </data>
-  <data name="&gt;&gt;rbJsonPull.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rbFemale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 36</value>
-  </data>
-  <data name="rbEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 19</value>
-  </data>
-  <data name="&gt;&gt;rbJsonPull.Name" xml:space="preserve">
-    <value>rbJsonPull</value>
-  </data>
-  <data name="rbFemale.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;rbCroatian.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbGenderChoice.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="btnEnglish.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="&gt;&gt;gbDataPull.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbJsonPull.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnEnglish.Name" xml:space="preserve">
-    <value>btnEnglish</value>
-  </data>
-  <data name="rbApiPull.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 19</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
   <data name="rbMale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;rbFemale.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="rbEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 36</value>
-  </data>
-  <data name="&gt;&gt;rbApiPull.Name" xml:space="preserve">
-    <value>rbApiPull</value>
-  </data>
-  <data name="&gt;&gt;btnSave.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;gbDataPull.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="rbApiPull.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnCroatian.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;btnCroatian.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;rbJsonPull.Parent" xml:space="preserve">
-    <value>gbDataPull</value>
-  </data>
-  <data name="&gt;&gt;rbCroatian.Parent" xml:space="preserve">
-    <value>gbLanguage</value>
-  </data>
-  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;rbCroatian.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnCroatian.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="gbGenderChoice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 150</value>
-  </data>
-  <data name="btnCroatian.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="gbLanguage.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="&gt;&gt;rbEnglish.Parent" xml:space="preserve">
-    <value>gbLanguage</value>
-  </data>
-  <data name="gbLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>678, 399</value>
-  </data>
-  <data name="rbMale.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;rbJsonPull.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;rbApiPull.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbDataPull.Name" xml:space="preserve">
-    <value>gbDataPull</value>
-  </data>
-  <data name="gbLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 280</value>
-  </data>
-  <data name="rbEnglish.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;gbLanguage.Name" xml:space="preserve">
     <value>gbLanguage</value>
@@ -428,16 +218,226 @@
   <data name="&gt;&gt;btnEnglish.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="gbDataPull.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnEnglish.Name" xml:space="preserve">
+    <value>btnEnglish</value>
+  </data>
+  <data name="&gt;&gt;rbJsonPull.Name" xml:space="preserve">
+    <value>rbJsonPull</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.Parent" xml:space="preserve">
+    <value>gbLanguage</value>
+  </data>
+  <data name="&gt;&gt;rbMale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbFemale.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbCroatian.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 36</value>
+  </data>
+  <data name="rbCroatian.Text" xml:space="preserve">
+    <value>Croatian</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.Parent" xml:space="preserve">
+    <value>gbLanguage</value>
+  </data>
+  <data name="&gt;&gt;btnCroatian.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbDataPull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 30</value>
+  </data>
+  <data name="rbApiPull.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnCroatian.Name" xml:space="preserve">
+    <value>btnCroatian</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="rbApiPull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 19</value>
+  </data>
+  <data name="btnEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rbMale.Text" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbGenderChoice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 80</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EntryForm</value>
+  </data>
+  <data name="gbLanguage.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="gbLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 80</value>
+  </data>
+  <data name="rbCroatian.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbFemale.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gbDataPull.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gbGenderChoice.Text" xml:space="preserve">
+    <value>Gender</value>
+  </data>
   <data name="&gt;&gt;gbLanguage.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="rbFemale.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gbGenderChoice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSave.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="rbMale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 19</value>
+  </data>
+  <data name="rbJsonPull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
+  </data>
+  <data name="btnCroatian.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="rbApiPull.Text" xml:space="preserve">
+    <value>API</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.Name" xml:space="preserve">
+    <value>rbEnglish</value>
   </data>
   <data name="&gt;&gt;rbMale.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>en</value>
-  </metadata>
+  <data name="btnCroatian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;rbJsonPull.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbMale.Parent" xml:space="preserve">
+    <value>gbGenderChoice</value>
+  </data>
+  <data name="&gt;&gt;gbGenderChoice.Name" xml:space="preserve">
+    <value>gbGenderChoice</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.Name" xml:space="preserve">
+    <value>rbCroatian</value>
+  </data>
+  <data name="&gt;&gt;rbApiPull.Name" xml:space="preserve">
+    <value>rbApiPull</value>
+  </data>
+  <data name="btnCroatian.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 276</value>
+  </data>
+  <data name="rbEnglish.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;rbEnglish.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbDataPull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 80</value>
+  </data>
+  <data name="&gt;&gt;rbFemale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;gbDataPull.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbApiPull.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbCroatian.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbGenderChoice.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rbJsonPull.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbJsonPull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 36</value>
+  </data>
+  <data name="rbMale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 36</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gbLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 280</value>
+  </data>
+  <data name="&gt;&gt;btnCroatian.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbDataPull.Name" xml:space="preserve">
+    <value>gbDataPull</value>
+  </data>
+  <data name="&gt;&gt;rbApiPull.Parent" xml:space="preserve">
+    <value>gbDataPull</value>
+  </data>
+  <data name="rbEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="gbLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnCroatian.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gbGenderChoice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 150</value>
+  </data>
+  <data name="&gt;&gt;gbLanguage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbEnglish.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;rbFemale.Parent" xml:space="preserve">
+    <value>gbGenderChoice</value>
+  </data>
+  <data name="rbApiPull.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>hr</value>
   </metadata>
 </root>

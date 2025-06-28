@@ -113,6 +113,7 @@
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = MainClass.Properties.Resources.goal_entryForm;
             Controls.Add(btnEnglish);
             Controls.Add(btnCroatian);
             Controls.Add(btnSave);

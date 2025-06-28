@@ -1,5 +1,6 @@
 ﻿using RestSharp;
 using Newtonsoft.Json;
+using Xceed.Wpf.Toolkit;
 
 
 namespace DataLibrary.Services
@@ -14,18 +15,24 @@ namespace DataLibrary.Services
 
             try
             {
-                var response = await _client.ExecuteAsync(request);
+                RestResponse restResponse = await DataLibrary.Config.Endpoints._restClient.ExecuteAsync(request);
 
-                if (!response.IsSuccessful)
+                if (!restResponse.IsSuccessful)
                 {
-                    throw new Exception($"API Error: {response.StatusCode} - {response.ErrorMessage}");
+                    
+                    throw Exception.ReferenceEquals(restResponse.ErrorException, null)
+                        ? new Exception($"Error fetching data: {restResponse.StatusCode} - {restResponse.Content}")
+                        : restResponse.ErrorException;
+                    
                 }
-
-                return JsonConvert.DeserializeObject<T>(response.Content ?? "");
+                
+                return System.Text.Json.JsonSerializer.Deserialize<T>(restResponse.Content ?? "");
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw Exception.ReferenceEquals(ex, null)
+                    ? new Exception("An error occurred while fetching data from the API.", ex)
+                    : ex;
             }
         }
     }

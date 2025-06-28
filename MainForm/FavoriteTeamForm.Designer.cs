@@ -43,6 +43,7 @@
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.team_favoriteTeamForm;
             Controls.Add(cbFavoriteTeam);
             Name = "form_FavoriteTeamForm";
             Load += form_FavoriteTeamForm_Load;

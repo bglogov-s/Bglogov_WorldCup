@@ -1,7 +1,7 @@
 {
   "SelectedLanguage": "hr",
-  "UseApiPull": false,
-  "UseJsonPull": true,
-  "IsMale": false,
-  "IsFemale": true
+  "UseApiPull": true,
+  "UseJsonPull": false,
+  "IsMale": true,
+  "IsFemale": false
 }
