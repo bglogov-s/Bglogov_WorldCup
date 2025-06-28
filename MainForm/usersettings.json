@@ -3,5 +3,6 @@
   "UseApiPull": true,
   "UseJsonPull": false,
   "IsMale": true,
-  "IsFemale": false
+  "IsFemale": false,
+  "FavoriteTeamFifaCode": "KOR"
 }

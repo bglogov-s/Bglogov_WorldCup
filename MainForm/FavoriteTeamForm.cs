@@ -1,4 +1,5 @@
-﻿using DataLibrary.Models;
+﻿using DataLibrary.Config;
+using DataLibrary.Models;
 using MainForm;
 using Newtonsoft.Json;
 using RestSharp;
@@ -64,13 +65,29 @@ namespace MainClass
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);    
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void cbFavoriteTeam_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSaveChoice_Click(object sender, EventArgs e)
+        {
+            if (cbFavoriteTeam.SelectedItem is Team selectedTeam)
+            {
+                var settings = SettingsManager.LoadSettings();
+                settings.FavoriteTeamFifaCode = selectedTeam.FifaCode;
+                SettingsManager.SaveSettings(settings);
+
+                MessageBox.Show($"You have selected team:  '{selectedTeam.Country}' ({selectedTeam.FifaCode}) ");
+
+                this.Hide();
+                from_FavoritePlayersForm from_FavoritePlayersForm = new from_FavoritePlayersForm();
+                from_FavoritePlayersForm.Show();
+            }
         }
 
         public async Task<T?> FetchFromApiAsync<T>(string endpoint)

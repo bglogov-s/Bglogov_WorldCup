@@ -13,7 +13,7 @@ namespace DataLibrary.Config
         public bool UseJsonPull { get; set; }
         public bool IsMale { get; set; }
         public bool IsFemale { get; set; }
-
+        public string? FavoriteTeamFifaCode { get; set; }
 
     }
 }

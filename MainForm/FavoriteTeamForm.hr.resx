@@ -124,6 +124,9 @@
   <data name="cbFavoriteTeam.Size" type="System.Drawing.Size, System.Drawing">
     <value>450, 23</value>
   </data>
+  <data name="btnSaveChoice.Text" xml:space="preserve">
+    <value>Spremi</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_FavoriteTeamForm));
             cbFavoriteTeam = new ComboBox();
+            btnSaveChoice = new Button();
             SuspendLayout();
             // 
             // cbFavoriteTeam
@@ -39,11 +40,19 @@
             cbFavoriteTeam.Name = "cbFavoriteTeam";
             cbFavoriteTeam.SelectedIndexChanged += cbFavoriteTeam_SelectedIndexChanged;
             // 
+            // btnSaveChoice
+            // 
+            resources.ApplyResources(btnSaveChoice, "btnSaveChoice");
+            btnSaveChoice.Name = "btnSaveChoice";
+            btnSaveChoice.UseVisualStyleBackColor = true;
+            btnSaveChoice.Click += btnSaveChoice_Click;
+            // 
             // form_FavoriteTeamForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.team_favoriteTeamForm;
+            Controls.Add(btnSaveChoice);
             Controls.Add(cbFavoriteTeam);
             Name = "form_FavoriteTeamForm";
             Load += form_FavoriteTeamForm_Load;
@@ -53,5 +62,6 @@
         #endregion
 
         private ComboBox cbFavoriteTeam;
+        private Button btnSaveChoice;
     }
 }
