@@ -21,6 +21,7 @@ namespace MainClass.CustomControls
         public custom_PlayerControl()
         {
             InitializeComponent();
+            InitializeContextMenu();
         }
 
         public void SetPlayerData(Player player, bool isFavorite)
@@ -67,6 +68,47 @@ namespace MainClass.CustomControls
             }
         }
 
-        
+        private void InitializeContextMenu()
+        {
+            var contextMenu = new ContextMenuStrip();
+            var tsmiChangeImage = new ToolStripMenuItem("Promijeni sliku");
+            tsmiChangeImage.Click += TsmiChangeImage_Click;
+            contextMenu.Items.Add(tsmiChangeImage);
+
+            pictureBox1.ContextMenuStrip = contextMenu;
+        }
+
+        private void TsmiChangeImage_Click(object? sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Title = "Odaberi novu sliku";
+                ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    Image newImage = Image.FromFile(ofd.FileName);
+                    pictureBox1.Image = newImage;
+
+                    
+                    string projectRootPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MainForm\Resources\PlayerImages");
+                    Directory.CreateDirectory(projectRootPath); 
+
+                    
+                    string playerName = (Tag as Player)?.Name ?? "Unknown";
+                    string fileName = $"{playerName}_{DateTime.Now:yyyyMMddHHmmss}.jpg";
+                    string savePath = Path.Combine(projectRootPath, fileName);
+
+                   
+                    newImage.Save(savePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+                    
+                    string relativePath = $@"Resources\PlayerImages\{fileName}";
+                    ((Player)Tag).PicturePath = relativePath;
+
+                    MessageBox.Show($"Slika spremljena u:\n{savePath}", "Uspješno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
     }
 }

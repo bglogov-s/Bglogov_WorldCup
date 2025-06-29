@@ -21,6 +21,6 @@ namespace DataLibrary.Models
         [JsonPropertyName("position")]
         public string Position { get; set; } = string.Empty;
 
-        
+        public string? PicturePath { get; set; }
     }
 }
