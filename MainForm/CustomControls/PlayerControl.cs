@@ -17,7 +17,7 @@ namespace MainClass.CustomControls
 {
     public partial class custom_PlayerControl : UserControl
     {
-
+        public Player? PlayerData { get; private set; }
         public custom_PlayerControl()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace MainClass.CustomControls
             lblPosition.Text = player.Position;
             lblCaptain.Text = player.Captain ? "<CAP>" : "";
             lblFavorite.Text = isFavorite ? "★" : "";
-            Tag = player;
+            PlayerData = player;
         }
         public bool IsSelected => cbSelect.Checked;
         private void cbSelect_CheckedChanged(object sender, EventArgs e)
@@ -80,6 +80,12 @@ namespace MainClass.CustomControls
 
         private void TsmiChangeImage_Click(object? sender, EventArgs e)
         {
+            if (PlayerData == null)
+            {
+                MessageBox.Show("Nema učitanog igrača za ovu kontrolu.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 ofd.Title = "Odaberi novu sliku";
@@ -87,26 +93,33 @@ namespace MainClass.CustomControls
 
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    Image newImage = Image.FromFile(ofd.FileName);
-                    pictureBox1.Image = newImage;
+                    try
+                    {
+                        Image newImage = Image.FromFile(ofd.FileName);
+                        pictureBox1.Image = newImage;
 
-                    
-                    string projectRootPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MainForm\Resources\PlayerImages");
-                    Directory.CreateDirectory(projectRootPath); 
+                        // Lokacija za spremanje
+                        string projectRootPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\MainForm\Resources\PlayerImages");
+                        Directory.CreateDirectory(projectRootPath);
 
-                    
-                    string playerName = (Tag as Player)?.Name ?? "Unknown";
-                    string fileName = $"{playerName}_{DateTime.Now:yyyyMMddHHmmss}.jpg";
-                    string savePath = Path.Combine(projectRootPath, fileName);
+                        // Ime datoteke
+                        string safeName = string.Join("_", PlayerData.Name.Split(Path.GetInvalidFileNameChars()));
+                        string fileName = $"{safeName}_{DateTime.Now:yyyyMMddHHmmss}.jpg";
+                        string savePath = Path.GetFullPath(Path.Combine(projectRootPath, fileName));
 
-                   
-                    newImage.Save(savePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        // Spremi sliku
+                        newImage.Save(savePath, System.Drawing.Imaging.ImageFormat.Jpeg);
 
-                    
-                    string relativePath = $@"Resources\PlayerImages\{fileName}";
-                    ((Player)Tag).PicturePath = relativePath;
+                        // Spremljena relativna putanja
+                        string relativePath = $@"Resources\PlayerImages\{fileName}";
+                        PlayerData.PicturePath = relativePath;
 
-                    MessageBox.Show($"Slika spremljena u:\n{savePath}", "Uspješno", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"Slika je uspješno spremljena:\n{savePath}", "Uspjeh", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Greška pri spremanju slike: {ex.Message}", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

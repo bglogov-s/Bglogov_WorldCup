@@ -117,34 +117,125 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rbJsonPull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 48</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rbJsonPull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="rbJsonPull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 24</value>
+  </data>
+  <data name="rbApiPull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 48</value>
+  </data>
+  <data name="rbApiPull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="rbApiPull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 24</value>
+  </data>
+  <data name="gbDataPull.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 40</value>
+  </data>
+  <data name="gbDataPull.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="gbDataPull.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="gbDataPull.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 107</value>
+  </data>
   <data name="gbDataPull.Text" xml:space="preserve">
     <value>Dohvat podataka</value>
   </data>
-  <data name="rbFemale.Text" xml:space="preserve">
-    <value>Žensko</value>
+  <data name="gbGenderChoice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 200</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="rbMale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
+  <data name="gbGenderChoice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="rbMale.Text" xml:space="preserve">
-    <value>Muško</value>
+  <data name="gbGenderChoice.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="gbGenderChoice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 107</value>
   </data>
   <data name="gbGenderChoice.Text" xml:space="preserve">
     <value>Spol</value>
   </data>
+  <data name="rbFemale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 48</value>
+  </data>
+  <data name="rbFemale.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="rbFemale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 24</value>
+  </data>
+  <data name="rbFemale.Text" xml:space="preserve">
+    <value>Žensko</value>
+  </data>
+  <data name="rbMale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 48</value>
+  </data>
+  <data name="rbMale.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="rbMale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 24</value>
+  </data>
+  <data name="rbMale.Text" xml:space="preserve">
+    <value>Muško</value>
+  </data>
+  <data name="btnSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 532</value>
+  </data>
+  <data name="btnSave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 52</value>
+  </data>
   <data name="btnSave.Text" xml:space="preserve">
     <value>Spremi</value>
+  </data>
+  <data name="btnCroatian.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 368</value>
+  </data>
+  <data name="btnCroatian.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnCroatian.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
   </data>
   <data name="btnCroatian.Text" xml:space="preserve">
     <value>Hrvatski</value>
   </data>
+  <data name="btnEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 368</value>
+  </data>
+  <data name="btnEnglish.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 31</value>
+  </data>
   <data name="btnEnglish.Text" xml:space="preserve">
     <value>Engleski</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>914, 600</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

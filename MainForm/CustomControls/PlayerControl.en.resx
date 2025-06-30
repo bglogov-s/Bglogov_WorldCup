@@ -123,10 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 10</value>
+    <value>71, 13</value>
   </data>
   <data name="lblName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>49, 20</value>
   </data>
   <data name="lblName.Text" xml:space="preserve">
     <value>Name</value>
@@ -135,10 +135,10 @@
     <value>True</value>
   </data>
   <data name="lblNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 83</value>
+    <value>7, 111</value>
   </data>
   <data name="lblNumber.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 15</value>
+    <value>63, 20</value>
   </data>
   <data name="lblNumber.Text" xml:space="preserve">
     <value>Number</value>
@@ -147,10 +147,10 @@
     <value>True</value>
   </data>
   <data name="lblPosition.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 41</value>
+    <value>71, 55</value>
   </data>
   <data name="lblPosition.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 15</value>
+    <value>61, 20</value>
   </data>
   <data name="lblPosition.Text" xml:space="preserve">
     <value>Position</value>
@@ -159,10 +159,10 @@
     <value>True</value>
   </data>
   <data name="lblCaptain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 83</value>
+    <value>145, 111</value>
   </data>
   <data name="lblCaptain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 15</value>
+    <value>60, 20</value>
   </data>
   <data name="lblCaptain.Text" xml:space="preserve">
     <value>Captain</value>
@@ -170,24 +170,43 @@
   <data name="lblFavorite.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblFavorite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 13</value>
+  </data>
   <data name="lblFavorite.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 15</value>
+    <value>61, 20</value>
   </data>
   <data name="lblFavorite.Text" xml:space="preserve">
     <value>Favorite</value>
   </data>
   <data name="cbSelect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 74</value>
+    <value>330, 99</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbSelect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="cbSelect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 24</value>
+    <value>30, 32</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 8</value>
+  </data>
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
+    <value>57, 67</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
   </data>
   <data name="$this.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -195,7 +214,10 @@
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 101</value>
+    <value>368, 135</value>
   </data>
 </root>

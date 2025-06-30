@@ -43,31 +43,26 @@
             // 
             resources.ApplyResources(lblName, "lblName");
             lblName.Name = "lblName";
-            
             // 
             // lblNumber
             // 
             resources.ApplyResources(lblNumber, "lblNumber");
             lblNumber.Name = "lblNumber";
-            
             // 
             // lblPosition
             // 
             resources.ApplyResources(lblPosition, "lblPosition");
             lblPosition.Name = "lblPosition";
-            
             // 
             // lblCaptain
             // 
             resources.ApplyResources(lblCaptain, "lblCaptain");
             lblCaptain.Name = "lblCaptain";
-            
             // 
             // lblFavorite
             // 
             resources.ApplyResources(lblFavorite, "lblFavorite");
             lblFavorite.Name = "lblFavorite";
-            
             // 
             // cbSelect
             // 
@@ -98,7 +93,7 @@
             Controls.Add(lblPosition);
             Controls.Add(lblNumber);
             Controls.Add(lblName);
-            Name = "custom_PlayerControl";     
+            Name = "custom_PlayerControl";
             MouseDown += custom_PlayerControl_MouseDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

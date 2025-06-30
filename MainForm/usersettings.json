@@ -1,13 +1,13 @@
 {
-  "SelectedLanguage": "hr",
-  "UseApiPull": true,
-  "UseJsonPull": false,
+  "SelectedLanguage": "en",
+  "UseApiPull": false,
+  "UseJsonPull": true,
   "IsMale": true,
   "IsFemale": false,
   "FavoriteTeamFifaCode": "KOR",
   "FavoritePlayers": [
-    "JUNG Wooyoung_15",
-    "MOON Seonmin_18",
-    "KOO Jacheol_13"
+    "JO Hyeonwoo_23",
+    "LEE Yong_2",
+    "PARK Jooho_6"
   ]
 }
